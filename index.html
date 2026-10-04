@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Polo Enriquez | Marketing Programs & Digital Marketing</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Polo Enriquez, a marketing professional working across content, social media, SEO, digital strategy, campaigns, events, and marketing operations."
+  >
+
+  <style>
+    :root {
+      --bg: #f4f1e8;
+      --paper: #fbfaf6;
+      --ink: #151515;
+      --muted: #6b685f;
+      --line: #d8d2c4;
+      --dark: #171717;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .wrap {
+      width: min(calc(100% - 40px), var(--max));
+      margin: auto;
+    }
+
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(244, 241, 232, 0.95);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      font-weight: 900;
+      font-size: 1.1rem;
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .nav-cta {
+      padding: 10px 16px;
+      border: 1px solid var(--ink);
+      border-radius: 100px;
+      font-weight: 700;
+    }
+
+    .hero {
+      padding: 90px 0 60px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.6fr;
+      gap: 60px;
+      align-items: end;
+    }
+
+    h1 {
+      margin: 16px 0 28px;
+      font-size: clamp(4rem, 10vw, 8.5rem);
+      line-height: 0.85;
+      letter-spacing: -0.075em;
+    }
+
+    h1 em {
+      font-family: Georgia, serif;
+      font-weight: 400;
+    }
+
+    .hero-copy {
+      max-width: 700px;
+      font-size: 1.3rem;
+      color: #36342f;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .button {
+      padding: 13px 20px;
+      border: 1px solid var(--ink);
+      border-radius: 100px;
+      font-weight: 700;
+    }
+
+    .button.primary {
+      background: var(--ink);
+      color: white;
+    }
+
+    .hero-note {
+      border-top: 1px solid var(--line);
+      padding-top: 20px;
+      color: var(--muted);
+    }
+
+    .hero-note strong {
+      color: var(--ink);
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .metric {
+      padding: 32px;
+      border-right: 1px solid var(--line);
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 2.5rem;
+      letter-spacing: -0.05em;
+      margin-bottom: 8px;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    section {
+      padding: 90px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      align-items: end;
+      margin-bottom: 40px;
+    }
+
+    .section-head h2 {
+      margin: 8px 0 0;
+      font-size: clamp(2.5rem, 5vw, 5rem);
+      line-height: 0.95;
+      letter-spacing: -0.055em;
+    }
+
+    .section-head p {
+      max-width: 480px;
+      color: var(--muted);
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .case {
+      min-height: 390px;
+      padding: 30px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .case-number {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .case h3 {
+      margin: 20px 0 14px;
+      font-size: 2.6rem;
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+
+    .case p {
+      color: var(--muted);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .tag {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 100px;
+      padding: 7px 11px;
+      font-size: 0.76rem;
+    }
+
+    .case-stat {
+      border-top: 1px solid var(--line);
+      margin-top: 28px;
+      padding-top: 20px;
+    }
+
+    .case-stat strong {
+      display: block;
+      font-size: 1.5rem;
+    }
+
+    .case-stat span {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .service {
+      border-top: 2px solid var(--ink);
+      padding-top: 16px;
+    }
+
+    .service h3 {
+      margin: 0 0 12px;
+    }
+
+    .service p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 70px;
+    }
+
+    .about-title {
+      font-size: clamp(2.8rem, 5vw, 5rem);
+      line-height: 0.95;
+      letter-spacing: -0.055em;
+      margin: 0;
+    }
+
+    .about-copy {
+      font-size: 1.08rem;
+    }
+
+    .about-copy p {
+      color: #36342f;
+    }
+
+    .personal {
+      border-top: 1px solid var(--line);
+      margin-top: 28px;
+      padding-top: 20px;
+      color: var(--muted);
+    }
+
+    .contact {
+      background: var(--dark);
+      color: white;
+    }
+
+    .contact .eyebrow {
+      color: #aaa;
+    }
+
+    .contact h2 {
+      margin: 14px 0 20px;
+      font-size: clamp(3rem, 7vw, 7rem);
+      line-height: 0.9;
+      letter-spacing: -0.06em;
+    }
+
+    .contact p {
+      color: #c5c5c5;
+      max-width: 720px;
+      font-size: 1.08rem;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .contact-links a {
+      border: 1px solid #555;
+      padding: 12px 17px;
+      border-radius: 100px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #999;
+      padding: 25px 0 40px;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .metrics,
+      .services {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .navlinks a:not(.nav-cta) {
+        display: none;
+      }
+
+      .work-grid,
+      .metrics,
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 4.4rem;
+      }
+
+      .section-head {
+        display: block;
+      }
+
+      .section-head p {
+        margin-top: 18px;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">POLO ENRIQUEZ</a>
+
+    <nav class="navlinks">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Let's work together</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+
+    <div>
+      <div class="eyebrow">
+        Marketing Programs · Content · Social · Digital
+      </div>
+
+      <h1>
+        From brief<br>
+        to <em>impact.</em>
+      </h1>
+
+      <p class="hero-copy">
+        I turn strategy into marketing that moves, across content, search,
+        social media, campaigns, events, and marketing operations.
+      </p>
+
+      <div class="buttons">
+        <a href="#work" class="button primary">See selected work</a>
+        <a href="#services" class="button">Fractional marketing support</a>
+      </div>
+    </div>
+
+    <div class="hero-note">
+      <strong>Polo Enriquez</strong><br>
+      Marketing Program Officer<br>
+      Makati City, Philippines
+      <br><br>
+      Available for full-time opportunities and long-term,
+      part-time fractional marketing work.
+    </div>
+
+  </div>
+</section>
+
+<div class="metrics">
+
+  <div class="metric">
+    <strong>+46.55%</strong>
+    <span>Organic Search sessions during the SEO/GEO program period</span>
+  </div>
+
+  <div class="metric">
+    <strong>~1,200</strong>
+    <span>Employees reached at the first FedEx Wellness Caravan</span>
+  </div>
+
+  <div class="metric">
+    <strong>52</strong>
+    <span>Tracked RESTART media placements recorded by agency monitoring</span>
+  </div>
+
+  <div class="metric">
+    <strong>8</strong>
+    <span>Expert Opinion Series episodes planned for 2026</span>
+  </div>
+
+</div>
+
+<section id="work">
+  <div class="wrap">
+
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Selected work</div>
+        <h2>Programs I helped<br>move forward.</h2>
+      </div>
+
+      <p>
+        Four projects that show how I work across strategy, content,
+        coordination, execution, and performance.
+      </p>
+    </div>
+
+    <div class="work-grid">
+
+      <article class="case">
+        <div>
+          <div class="case-number">01 · SEO + GEO</div>
+
+          <h3>Building search visibility for InLife Benefits</h3>
+
+          <p>
+            Led the marketing side of a structured SEO and GEO program covering
+            keyword strategy, priority pages, website fixes, content,
+            agency coordination, and performance reporting.
+          </p>
+
+          <div class="tags">
+            <span class="tag">SEO</span>
+            <span class="tag">GEO</span>
+            <span class="tag">Content</span>
+            <span class="tag">Analytics</span>
+          </div>
+        </div>
+
+        <div class="case-stat">
+          <strong>10,380 → 15,212</strong>
+          <span>
+            Organic Search sessions, preceding period vs. Jul 10 to Oct 1, 2026
+          </span>
+        </div>
+      </article>
+
+      <article class="case">
+        <div>
+          <div class="case-number">02 · RESTART</div>
+
+          <h3>Supporting a major brand launch</h3>
+
+          <p>
+            Helped manage the InLife Benefits RESTART launch, coordinating
+            agency work, branding, venue requirements, approvals, suppliers,
+            logistics, program flow, and onsite execution.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Brand Launch</span>
+            <span class="tag">Events</span>
+            <span class="tag">Agency Management</span>
+          </div>
+        </div>
+
+        <div class="case-stat">
+          <strong>~175 guests</strong>
+          <span>
+            52 tracked placements and ₱32.7M agency-reported PR value
+          </span>
+        </div>
+      </article>
+
+      <article class="case">
+        <div>
+          <div class="case-number">03 · WELLNESS CARAVAN</div>
+
+          <h3>Building a client activation from the ground up</h3>
+
+          <p>
+            Helped turn an employee wellness activation into a repeatable
+            program by coordinating clients, partners, activities, logistics,
+            branding, giveaways, and onsite execution.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Client Engagement</span>
+            <span class="tag">Partnerships</span>
+            <span class="tag">Activation</span>
+          </div>
+        </div>
+
+        <div class="case-stat">
+          <strong>~1,200 employees</strong>
+          <span>
+            Reached across two Clark sites, followed by about 8 additional
+            caravans I worked on
+          </span>
+        </div>
+      </article>
+
+      <article class="case">
+        <div>
+          <div class="case-number">04 · EXPERT OPINION SERIES</div>
+
+          <h3>Turning expert interviews into a content program</h3>
+
+          <p>
+            As the 2026 main program proponent and execution lead, I manage the
+            cycle from topic research and expert sourcing through interviews,
+            production, publishing, and performance review.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Thought Leadership</span>
+            <span class="tag">Editorial</span>
+            <span class="tag">Video</span>
+            <span class="tag">Program Management</span>
+          </div>
+        </div>
+
+        <div class="case-stat">
+          <strong>8 planned</strong>
+          <span>
+            5 completed through Mental Health Month, with 7 typical content
+            formats per episode
+          </span>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Fractional marketing support</div>
+
+        <h2>
+          Extra marketing capacity,<br>
+          without a full-time hire.
+        </h2>
+      </div>
+
+      <p>
+        Available for long-term part-time partnerships, monthly retainers,
+        project-based work, and hourly support.
+      </p>
+    </div>
+
+    <div class="services">
+
+      <div class="service">
+        <h3>Content & Copy</h3>
+        <p>
+          Content strategy, social copy, blog and SEO writing,
+          email marketing, website content, and content calendars.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>Social Media</h3>
+        <p>
+          Planning, publishing, community management, campaign coordination,
+          and ongoing channel support.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>Digital Marketing</h3>
+        <p>
+          Digital strategy, SEO content support, website management,
+          lead-generation support, analytics, and reporting.
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>Marketing Operations</h3>
+        <p>
+          Campaign coordination, project management, partner and vendor
+          coordination, timelines, approvals, and execution support.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+
+    <h2 class="about-title">
+      Writer first.<br>
+      Marketer now.<br>
+      Still both.
+    </h2>
+
+    <div class="about-copy">
+
+      <p>
+        I started my career in writing and digital content, working on
+        social media, campaign copy, SEO articles, and consumer brands.
+        Over time, my role expanded into broader marketing programs,
+        digital strategy, search, events, partnerships, budgets,
+        analytics, and project coordination.
+      </p>
+
+      <p>
+        Today, I work as a Marketing Program Officer at InLife Benefits.
+        I stay close to the writing and strategy that started my career,
+        while managing the people, timelines, approvals, and moving parts
+        needed to get marketing work delivered.
+      </p>
+
+      <div class="personal">
+        Outside work, I spend a lot of time at the gym, reading, gaming,
+        and trying new things. I like experiences that break routine,
+        and that curiosity carries into the kind of work I enjoy.
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+
+    <div class="eyebrow">Let's work together</div>
+
+    <h2>
+      Need reliable<br>
+      marketing support?
+    </h2>
+
+    <p>
+      I'm open to full-time opportunities, long-term fractional partnerships,
+      part-time remote work, and project-based engagements. Fractional
+      availability is typically 10 to 30 hours per week, primarily during
+      Philippine daytime with some overlap for US, UK, and Australian teams.
+    </p>
+
+    <div class="contact-links">
+
+      <a href="mailto:johnpaul.enriquez@gmail.com">
+        Email
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/john-paul-enriquez/"
+        target="_blank"
+      >
+        LinkedIn
+      </a>
+
+      <a
+        href="https://wa.me/639686136130"
+        target="_blank"
+      >
+        WhatsApp
+      </a>
+
+      <a href="viber://chat?number=%2B639686136130">
+        Viber
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    © 2026 Polo Enriquez · Makati City, Philippines · +63 968 613 6130
+  </div>
+</footer>
+
+</body>
+</html>
