@@ -1,30 +1,334 @@
-:root{--ink:#132335;--blue:#304dff;--paper:#f6f7fa;--white:#fff;--line:#d9dfe7;--muted:#596777}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:96px}body{margin:0;color:var(--ink);background:var(--paper);font-family:Arial,Helvetica,sans-serif;font-size:16px;-webkit-font-smoothing:antialiased}body.modal-open{overflow:hidden}button,input,select,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #6c82ff;outline-offset:5px}::selection{background:#cbd4ff;color:var(--ink)}.site-header{display:flex;justify-content:space-between;align-items:center;max-width:1440px;padding:27px 6%;margin:auto;border-bottom:1px solid var(--line)}nav{display:flex;gap:32px;align-items:center}nav a{text-decoration:none;font-size:15px}nav a:hover{color:var(--blue)}.wordmark{font-size:38px;letter-spacing:-2px;font-weight:800;text-decoration:none;line-height:1}.wordmark span{color:var(--blue)}.nav-cta{border:1px solid var(--ink);border-radius:24px;padding:12px 22px;transition:background .2s,color .2s}.nav-cta:hover{background:var(--ink);color:white}.hero{max-width:1440px;margin:auto;padding:74px 6% 24px;display:grid;grid-template-columns:1.45fr .75fr;column-gap:7%;align-items:center}.eyebrow{font-size:12px;letter-spacing:1.4px;font-weight:700;line-height:1.5}.hero h1{font-size:clamp(56px,6.8vw,104px);line-height:.98;letter-spacing:-5.5px;margin:32px 0 30px;font-weight:700}.hero h1 span{color:var(--blue)}p{font-size:17px;line-height:1.65}.hero-intro{max-width:440px;color:var(--muted);margin-bottom:27px}.hero-actions{display:flex;align-items:center;gap:26px}.button{display:inline-flex;justify-content:center;align-items:center;padding:17px 26px;text-decoration:none;border-radius:30px;border:1px solid transparent;font-size:15px;font-weight:600;line-height:1.4;transition:background .2s,transform .2s}.button:hover{transform:translateY(-2px)}.dark{color:white;background:var(--ink)}.dark:hover{background:var(--blue)}.blue{background:var(--blue);color:white}.blue:hover{background:#1934d8}.outline{border-color:var(--ink);color:var(--ink);background:transparent}.outline:hover{color:white;background:var(--ink)}.text-link,.small-link{background:none;border:0;text-decoration:underline;text-underline-offset:5px;font-size:14px;font-weight:600;padding:5px 0;color:inherit}.text-link:hover,.small-link:hover{color:var(--blue)}.hero-feature{padding:18px 18px 0;background:#e7ebf2;transform:rotate(3deg);border-radius:3px;margin:10px -4px 16px 0;box-shadow:0 16px 42px #1220340c;transition:transform .4s}.hero-feature:hover{transform:rotate(0)}.feature-top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:14px}.feature-top .eyebrow{font-size:12px;letter-spacing:1px}.feature-number{font-family:Georgia,serif;font-size:24px}.hero-image-button{border:0;background:#092d61;width:100%;height:365px;overflow:hidden;position:relative;display:block;padding:0}.hero-image-button img{width:100%;height:100%;object-fit:cover;object-position:center 18%;transition:transform .5s}.hero-image-button:hover img{transform:scale(1.045)}.image-view-label{position:absolute;bottom:15px;right:15px;background:white;border-radius:22px;padding:12px 17px;font-size:13px;font-weight:600}.feature-bottom{display:flex;align-items:center;justify-content:space-between;padding:21px 4px}.feature-bottom strong{display:block;font-size:21px;margin-bottom:5px}.feature-bottom span{font-size:13px;color:var(--muted)}.feature-bottom .feature-mark{font-size:28px;color:var(--ink)}.hero-footnote{grid-column:1/-1;display:flex;justify-content:space-between;gap:20px;padding:42px 0 12px;font-size:12px;letter-spacing:1.2px;color:var(--muted)}.brand-strip{background:var(--ink);color:white;display:flex;align-items:center;justify-content:space-between;gap:30px;padding:30px max(6%,calc((100vw - 1267px)/2));margin-top:8px}.brand-strip>span{font-size:12px;color:#b0bdcc;max-width:75px;line-height:1.4}.brand-strip strong{font-size:19px;letter-spacing:-.4px;white-space:nowrap}.section{max-width:1440px;margin:auto;padding:96px 6%}.section-top{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:46px}h2{font-size:clamp(38px,4.2vw,60px);line-height:1.08;letter-spacing:-2.5px;margin:20px 0 0;font-weight:600}.section-intro{max-width:300px;color:var(--muted);margin-bottom:4px}.work-toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-bottom:22px}.filters{display:flex;gap:10px}.filter{border:1px solid var(--line);border-radius:25px;background:transparent;padding:13px 19px;font-size:14px;color:var(--ink)}.filter span{font-size:12px;margin-left:10px;opacity:.6}.filter.active{background:var(--ink);border-color:var(--ink);color:white}.work-context{font-size:12px;color:var(--muted)}.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 30px}.project-card{background:transparent;text-align:left;border:0;color:var(--ink);padding:0;display:block;width:100%}.project-cover{position:relative;height:280px;overflow:hidden;transition:transform .3s;border-radius:3px}.project-card:hover .project-cover{transform:translateY(-4px)}.cover-program{padding:30px;display:flex;flex-direction:column;justify-content:space-between}.cover-program .cover-category{font-size:12px;letter-spacing:1.5px}.cover-word{font-size:clamp(36px,4.5vw,70px);font-weight:600;letter-spacing:-3px;line-height:1.02}.cover-program .cover-caption{font-size:14px;line-height:1.5;max-width:70%;opacity:.8}.cover-serial{position:absolute;top:30px;right:30px;font-size:13px;opacity:.7}.theme-search{background:var(--blue);color:white}.theme-eos{background:#dce5fa;color:var(--ink)}.theme-wellness{background:var(--ink);color:white}.theme-restart{background:#f0da56;color:#262919}.theme-event{background:#dddff2;color:#273757}.theme-arrow{background:#e8e8e5;color:#273757}.cover-image{background:#dde3ed;display:flex;align-items:center;justify-content:center;padding:0 35px}.cover-image img{height:100%;width:100%;object-fit:cover;object-position:center 33%;transition:transform .5s}.project-card:hover img{transform:scale(1.03)}.cover-gcash{background:#255ee9}.cover-koka{background:#ed3935}.cover-wallstreet{background:#dec6b4}.cover-missworld{background:#5f6dbb}.cover-pill{position:absolute;bottom:16px;right:16px;padding:10px 15px;border-radius:25px;background:#fff;color:var(--ink);font-size:12px;font-weight:600;box-shadow:0 2px 10px #0001}.project-meta{display:flex;justify-content:space-between;gap:18px;padding-top:18px;align-items:baseline}.project-meta h3{font-size:22px;letter-spacing:-.7px;font-weight:600;margin:0}.project-meta .plus{font-size:24px;font-weight:400;line-height:1}.project-role{font-size:13px;color:var(--muted);margin:7px 0 0;line-height:1.5}.work-note{font-size:12px;margin:26px 0 0;color:var(--muted)}.services-section{background:var(--ink);color:white}.services-section h2 span{color:#9baaff}.service-intro{max-width:350px}.service-intro p{font-size:19px}.service-intro .service-label{font-size:12px;letter-spacing:1.3px;color:#aab9cb}.muted{color:#bdc8d5!important;font-size:16px!important}.service-list{margin-top:60px;border-top:1px solid #ffffff38}.service-list details{border-bottom:1px solid #ffffff38}.service-list summary{list-style:none;display:flex;align-items:center;gap:26px;padding:29px 0;cursor:pointer}.service-list summary::-webkit-details-marker{display:none}.service-index{font-size:12px;color:#9baaff;width:30px}.service-list h3{font-size:29px;letter-spacing:-.8px;margin:0;font-weight:500}.detail-toggle{margin-left:auto;font-size:28px;font-weight:400;transition:transform .2s}.service-list details[open] .detail-toggle{transform:rotate(45deg)}.service-body{margin-left:56px;padding:0 0 34px;display:grid;grid-template-columns:1fr 1fr;column-gap:12%;max-width:940px}.service-body p{margin-top:0;color:#bdc8d5}.service-body ul{padding-left:19px;margin:0;line-height:1.8;color:#dde4ed;font-size:15px}.service-body .small-link{justify-self:start;color:#b5c0ff;margin-top:7px}.engagement{display:grid;grid-template-columns:1fr 1fr;gap:12%;margin-top:90px}.engagement h3{font-size:35px;line-height:1.1;letter-spacing:-1px;margin:20px 0}.engagement>div>p{color:#bdc8d5;font-size:16px}.engagement-tabs{display:flex;gap:6px;padding:5px;border:1px solid #ffffff36;border-radius:28px;margin-bottom:28px;width:max-content}.engagement-tab{padding:11px 19px;border:0;border-radius:22px;color:white;background:none;font-size:14px}.engagement-tab.active{background:#eef0ff;color:var(--ink)}#engagement-copy h4{font-size:23px;margin:0 0 13px;font-weight:500;letter-spacing:-.6px}#engagement-copy p{font-size:16px;color:#bdc8d5;min-height:80px}.availability{border-top:1px solid #ffffff38;margin-top:28px;padding-top:22px;display:grid;gap:10px;font-size:13px;color:#bdc8d5}.availability span:first-child{font-size:20px;color:white}.about-section{display:grid;grid-template-columns:1fr 1fr;gap:12%;padding-bottom:50px}.about-heading h2{font-size:clamp(42px,5vw,70px);margin-bottom:38px}.serif{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:400;color:var(--blue);letter-spacing:-3px}.about-copy p{color:var(--muted);margin-top:0}.about-copy .large-copy{font-size:25px;line-height:1.5;color:var(--ink);letter-spacing:-.5px;margin-bottom:24px}.outside-work{border-top:1px solid var(--line);padding-top:25px;margin-top:30px}.outside-work p{font-size:16px;margin-top:14px}.interest-tags{display:flex;gap:8px;flex-wrap:wrap}.interest-tags span{border:1px solid var(--line);border-radius:22px;padding:8px 12px;font-size:12px}.timeline-section{padding-top:15px;padding-bottom:90px}.timeline-row{display:grid;grid-template-columns:1fr 1.2fr 1fr;align-items:center;gap:20px;border-top:1px solid var(--line);padding:25px 0}.timeline-row>span{font-size:12px;color:var(--muted);letter-spacing:1px}.timeline-row h3{font-size:24px;letter-spacing:-.7px;font-weight:500;margin:0}.timeline-row p{font-size:14px;margin:0;line-height:1.5;color:var(--muted)}.timeline-row small{font-size:12px}.tools{border-top:1px solid var(--line);padding-top:34px;display:grid;grid-template-columns:1fr 2.2fr;gap:20px}.tools p{font-size:14px;line-height:1.9;margin:0;color:var(--muted)}.writing-section{background:#e9edf8}.writing-inner{display:grid;grid-template-columns:1fr 1fr;gap:12%}.writing-description{max-width:370px;color:var(--muted);margin:24px 0}.story-excerpt{border-left:1px solid #b8c3da;padding:10px 0 10px 50px;display:flex;flex-direction:column;justify-content:center}.story-excerpt blockquote{font-family:Georgia,'Times New Roman',serif;font-size:37px;line-height:1.2;letter-spacing:-1px;margin:32px 0}.story-excerpt p{font-size:13px;line-height:1.8}.story-excerpt p span{color:var(--muted)}.contact-section{display:grid;grid-template-columns:1fr 1.05fr;gap:10%}.contact-info h2{font-size:70px;line-height:1.04;margin-bottom:28px}.contact-info h2 span{color:var(--blue)}.contact-info>p{color:var(--muted);max-width:380px;font-size:16px}.email-link{display:inline-block;margin-top:20px;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:5px;font-size:clamp(16px,1.6vw,23px);letter-spacing:-.5px;word-break:break-word}.contact-links{display:flex;gap:24px;margin-top:24px}.contact-links a,.contact-links button{font-size:14px;text-decoration:underline;text-underline-offset:5px;border:0;background:none;color:var(--ink);padding:0}.contact-info .contact-number{font-size:12px;margin-top:30px}.viber-detail{border:1px solid var(--line);padding:15px;margin-top:20px;border-radius:4px}.viber-detail p{font-size:14px;margin-top:0}.viber-detail [role=status]{font-size:12px;margin-left:15px}.contact-form{background:white;border:1px solid var(--line);border-radius:4px;padding:32px}.contact-form h3{font-size:23px;letter-spacing:-.7px;margin:0 0 27px}.contact-form label{display:block;font-size:14px;font-weight:600;margin-bottom:19px;line-height:1.5}.optional{font-weight:400;color:var(--muted)}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}input,select,textarea{width:100%;border:1px solid #cbd2dd;background:var(--paper);padding:13px 12px;margin-top:8px;border-radius:3px;color:var(--ink);font-size:14px;min-height:46px}textarea{resize:vertical;line-height:1.5}input::placeholder,textarea::placeholder{color:#758090}select{padding-right:24px}.form-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.form-note{font-size:12px;color:var(--muted);line-height:1.6;margin:18px 0 0}.form-status{font-size:13px;line-height:1.5;color:var(--blue);margin:12px 0 0}.form-status:empty{display:none}footer{max-width:1440px;margin:auto;padding:28px 6%;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:25px}footer>span{font-size:12px;color:var(--muted)}footer .wordmark{font-size:30px}.skip{position:absolute;left:20px;top:-100px;background:white;padding:12px;z-index:100}.skip:focus{top:16px}dialog{border:0;border-radius:6px;padding:0;color:var(--ink);background:var(--paper);width:min(1100px,92vw);max-height:90vh;overflow:auto;box-shadow:0 30px 100px #0005}dialog::backdrop{background:#0c162cc7;backdrop-filter:blur(7px)}.dialog-topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:21px 32px;border-bottom:1px solid var(--line);background:var(--paper);position:sticky;top:0;z-index:2}.close-dialog{display:flex;align-items:center;gap:12px;background:none;border:0;font-size:14px;padding:4px;color:var(--ink)}.close-dialog span{font-size:27px;line-height:1}.project-detail{padding:36px 44px}.project-detail h2{font-size:42px;letter-spacing:-1.6px;margin-top:8px}.detail-role{font-size:15px;color:var(--blue);margin:16px 0 28px}.detail-layout{display:grid;grid-template-columns:1fr 1fr;gap:50px}.detail-text h3{font-size:13px;letter-spacing:1px;text-transform:uppercase;margin:29px 0 9px}.detail-text p,.detail-text li{font-size:16px;color:var(--muted);line-height:1.65}.detail-text ul{padding-left:20px}.detail-text .tag-list{display:flex;gap:7px;flex-wrap:wrap;margin-top:25px}.tag-list span{font-size:12px;background:#e7ebf3;padding:8px 11px;border-radius:18px}.gallery-stage{background:#e3e7ef;text-align:center;padding:15px;min-height:420px;border-radius:4px}.gallery-stage img{width:auto;max-width:100%;height:auto;max-height:590px;display:block;margin:auto}.gallery-controls{display:flex;align-items:center;justify-content:space-between;margin-top:15px;gap:15px}.gallery-controls button{border:1px solid var(--line);border-radius:20px;background:white;padding:10px 17px;font-size:13px;color:var(--ink)}.gallery-controls span{font-size:13px}.gallery-caption{font-size:12px;color:var(--muted);text-align:center;line-height:1.6}.project-summary-panel{margin-top:28px;background:#e5eafa;padding:26px}.project-summary-panel p{font-size:16px;color:var(--muted)}.project-summary-panel h3{font-size:20px;font-weight:500;letter-spacing:-.5px;margin-top:0}.full-story{max-width:700px;margin:auto;padding:40px 42px 60px}.full-story h2{font-family:Georgia,serif;font-size:44px;letter-spacing:-1.5px;margin:0}.story-byline{font-size:14px}.story-edit-note{font-size:12px;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:30px}#story-text p{font-family:Georgia,'Times New Roman',serif;font-size:19px;line-height:1.75;margin:0 0 21px}.full-story{width:100%}.reveal{animation:rise .5s ease both}@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-@media(min-width:1600px){.brand-strip{justify-content:center;gap:70px}}
-@media(max-width:1000px){nav{gap:22px}.hero{grid-template-columns:1.25fr .75fr;gap:5%}.hero h1{font-size:70px;letter-spacing:-4px}.hero-image-button{height:300px}.brand-strip{flex-wrap:wrap;justify-content:center;gap:25px}.brand-strip>span{max-width:none}.brand-strip strong{font-size:16px}.section{padding-top:72px;padding-bottom:72px}.project-cover{height:250px}.cover-word{font-size:48px}.service-intro{max-width:280px}.service-body{column-gap:8%}.contact-section{gap:6%}.contact-form{padding:24px}.contact-info h2{font-size:60px}.form-row{grid-template-columns:1fr;gap:0}.about-section{gap:8%}.engagement{gap:8%}.timeline-row{grid-template-columns:.7fr 1.2fr 1fr}.detail-layout{gap:30px}.hero-feature{padding:13px 13px 0}.feature-top .eyebrow{font-size:12px}.hero-footnote{font-size:12px}}
-@media(max-width:700px){html{scroll-padding-top:25px}.site-header{padding:22px 6%}.wordmark{font-size:32px}nav{gap:19px}nav a{font-size:14px}nav a:nth-child(2),nav a:nth-child(3){display:none}.nav-cta{padding:10px 16px}.hero{padding-top:45px;display:grid;grid-template-columns:1fr}.hero h1{font-size:clamp(54px,11vw,76px);letter-spacing:-3.7px;margin:28px 0 25px;line-height:1.03}.desktop-break{display:none}.hero-intro{font-size:16px}.hero-actions{gap:23px}.hero-feature{margin:40px 0 5px;transform:rotate(1.5deg);padding:16px 16px 0;max-width:420px;justify-self:center;width:100%}.hero-image-button{height:280px}.hero-image-button img{object-position:center 24%}.feature-top .eyebrow{font-size:12px}.hero-footnote{padding-top:32px;line-height:1.8;font-size:12px;flex-direction:column;gap:5px}.brand-strip{gap:21px;padding:25px 6%;justify-content:flex-start}.brand-strip>span{width:100%}.brand-strip strong{font-size:16px}.section{padding:63px 6%}.section-top{display:block;margin-bottom:30px}h2{font-size:39px;letter-spacing:-1.7px}.section-intro{font-size:16px;max-width:100%;margin-top:22px}.work-toolbar{display:block}.filters{gap:6px}.filter{padding:12px 14px;font-size:12px}.filter span{margin-left:6px;font-size:12px}.work-context{display:block;margin-top:17px}.project-grid{grid-template-columns:1fr;gap:28px}.project-cover{height:240px}.cover-program{padding:25px}.cover-word{font-size:55px}.cover-caption{font-size:13px!important}.project-meta h3{font-size:20px}.project-role{font-size:12px}.work-note{font-size:12px;line-height:1.6}.service-intro{max-width:100%;margin-top:32px}.service-intro p{font-size:19px}.service-list{margin-top:36px}.service-list summary{gap:14px;padding:25px 0}.service-index{width:23px;font-size:12px}.service-list h3{font-size:21px}.service-body{margin-left:37px;display:block}.service-body p{font-size:16px}.service-body ul{font-size:14px;margin-bottom:12px}.engagement{grid-template-columns:1fr;gap:24px;margin-top:55px}.engagement h3{font-size:31px}.engagement-tabs{margin-top:12px}.about-section{display:block;padding-bottom:40px}.about-heading h2{font-size:55px}.about-copy{margin-top:40px}.about-copy .large-copy{font-size:23px}.about-copy p{font-size:16px}.timeline-section{padding-top:0}.timeline-row{grid-template-columns:1fr;gap:10px;padding:25px 0}.timeline-row h3{font-size:23px}.timeline-row p{font-size:14px}.tools{grid-template-columns:1fr;gap:15px}.writing-inner{grid-template-columns:1fr;gap:40px}.story-excerpt{border-left:0;border-top:1px solid #b8c3da;padding:30px 0 0}.story-excerpt blockquote{font-size:34px}.contact-section{grid-template-columns:1fr;gap:34px}.contact-info h2{font-size:62px}.email-link{font-size:20px}.contact-form{padding:24px 20px}.contact-form h3{font-size:21px}.form-row{grid-template-columns:1fr}.contact-form label{font-size:14px}input,textarea,select{font-size:16px}.form-actions{gap:18px}.form-note{font-size:12px}.contact-info>p{max-width:none}footer{padding:28px 6%;flex-wrap:wrap;gap:18px}footer>span:nth-child(3){display:none}footer>span:last-child{margin-left:auto}.dialog-topbar{padding:16px 20px}.project-detail{padding:25px 22px}.project-detail h2{font-size:34px}.detail-layout{grid-template-columns:1fr;gap:25px}.gallery-stage{min-height:0}.gallery-stage img{max-height:560px}.detail-text h3:first-child{margin-top:0}.full-story{padding:30px 24px 50px}.full-story h2{font-size:38px}#story-text p{font-size:18px}.engagement-copy p{min-height:0}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.hero-feature{transform:none}.project-card:hover .project-cover,.button:hover{transform:none}}
+body{margin:0;background:#f6f7fa;font-family:Arial,Helvetica,sans-serif}#polo-portfolio{max-width:1440px;margin:0 auto}#polo-portfolio button,#polo-portfolio summary{cursor:pointer}
 
-/* Personal photography: consistent frames and room for the work. */
-.personal-feature{margin-left:0;margin-bottom:16px;min-width:0}
-.portrait-link{display:block;position:relative;height:460px;overflow:hidden;background:var(--ink);border-radius:2px}
-.portrait-link img{display:block;width:100%;height:100%;object-fit:cover;object-position:78% 35%;transition:transform .5s}
-.portrait-link:hover img{transform:scale(1.025)}
-.personal-feature .feature-bottom{gap:14px}
-.personal-feature .feature-bottom span{line-height:1.5}
-.about-photo{margin:0 0 28px;max-width:420px;background:#e7ebf2;padding:12px;border-radius:3px}
-.about-photo img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 40%;border-radius:2px}
-.about-photo figcaption{font-size:12px;line-height:1.6;color:var(--muted);padding:13px 3px 3px}
-.cover-arrow img{object-position:50% 39%}
-@media(max-width:1000px){.portrait-link{height:400px}}
-@media(max-width:700px){.portrait-link{height:auto;aspect-ratio:4/5}.personal-feature{margin:40px 0 5px}.about-photo{max-width:420px;margin-bottom:26px}}
-@media(prefers-reduced-motion:reduce){.portrait-link img{transition:none}.portrait-link:hover img{transform:none}}
+#polo-portfolio{--pp-ink:#132335;--pp-blue:#304dff;--pp-paper:#f6f7fa;--pp-white:#fff;--pp-line:#d9dfe7;--pp-muted:#596777;font-family:Arial,Helvetica,sans-serif;color:var(--pp-ink);text-align:left;font-size:15px;line-height:1.5;color-scheme:light}
+#polo-portfolio *{box-sizing:border-box}
+#polo-portfolio [hidden]{display:none!important}
+#polo-portfolio .pp-site{background:var(--pp-paper);overflow:clip}
+#polo-portfolio .pp-preview-label{padding:12px 5%;background:#e8edff;color:#3044ab;font-size:11px;letter-spacing:1.1px;font-weight:700;display:flex;gap:16px;flex-wrap:wrap}
+#polo-portfolio .pp-preview-label span{font-weight:400;letter-spacing:0}
+#polo-portfolio a{color:inherit;text-decoration:none}
+#polo-portfolio button{font:inherit;color:inherit}
+#polo-portfolio button:focus-visible,#polo-portfolio a:focus-visible,#polo-portfolio summary:focus-visible{outline:3px solid #6c82ff;outline-offset:5px}
+#polo-portfolio h1,#polo-portfolio h2,#polo-portfolio h3,#polo-portfolio p,#polo-portfolio figure{margin:0}
+#polo-portfolio .pp-header{padding:24px 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--pp-line)}
+#polo-portfolio .pp-wordmark{font-size:35px;line-height:1;font-weight:800;letter-spacing:-2px}
+#polo-portfolio .pp-wordmark span{color:var(--pp-blue)}
+#polo-portfolio nav{display:flex;align-items:center;gap:25px;font-size:13px}
+#polo-portfolio .pp-nav-contact{padding:10px 17px;background:transparent;border:1px solid var(--pp-ink);border-radius:24px;font-size:13px}
+#polo-portfolio .pp-nav-contact span{margin-left:12px}
+#polo-portfolio .pp-hero{display:grid;grid-template-columns:1.35fr .86fr;gap:7%;padding:52px 5% 36px;align-items:center}
+#polo-portfolio .pp-eyebrow{font-size:10px;font-weight:700;letter-spacing:1.1px;line-height:1.6}
+#polo-portfolio h1{font-size:clamp(43px,6.2vw,65px);letter-spacing:-3.2px;line-height:1.01;margin:23px 0 23px;font-weight:700}
+#polo-portfolio h1 span{color:var(--pp-blue)}
+#polo-portfolio .pp-role{font-size:14px;line-height:1.6;font-weight:700;margin-bottom:14px}
+#polo-portfolio .pp-role span{font-weight:400;color:var(--pp-muted)}
+#polo-portfolio .pp-intro{font-size:14px;color:var(--pp-muted);max-width:390px;line-height:1.7}
+#polo-portfolio .pp-actions{display:flex;gap:22px;align-items:center;margin-top:24px;flex-wrap:wrap}
+#polo-portfolio .pp-primary{background:var(--pp-ink);color:var(--pp-white);border:0;border-radius:25px;padding:13px 18px;font-size:12px;font-weight:700;display:inline-flex;align-items:center;gap:20px}
+#polo-portfolio .pp-primary:hover{background:var(--pp-blue)}
+#polo-portfolio .pp-text-button{padding:8px 0;background:none;border:0;border-bottom:1px solid currentColor;font-size:12px;font-weight:700}
+#polo-portfolio .pp-text-button span{margin-left:10px}
+#polo-portfolio .pp-portrait{background:#e7ebf2;padding:12px;transform:rotate(2deg);box-shadow:0 12px 30px #1323350c}
+#polo-portfolio .pp-portrait-top{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.8px;font-weight:700;padding:2px 0 12px;gap:10px}
+#polo-portfolio .pp-portrait>img{width:100%;aspect-ratio:4/4.6;object-fit:cover;object-position:76% 33%;display:block}
+#polo-portfolio .pp-portrait figcaption{display:flex;align-items:center;justify-content:space-between;padding:13px 1px 3px;gap:10px}
+#polo-portfolio .pp-portrait figcaption strong{display:block;font-size:16px;letter-spacing:-.3px}
+#polo-portfolio .pp-portrait figcaption div>span{font-size:10px;color:var(--pp-muted);display:block;margin-top:2px}
+#polo-portfolio .pp-portrait figcaption>span{font-size:24px;color:var(--pp-blue)}
+#polo-portfolio .pp-impact{margin:10px 5% 0;padding:25px 0 22px;border-top:1px solid var(--pp-line);border-bottom:1px solid var(--pp-line);display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+#polo-portfolio .pp-impact>div+div{border-left:1px solid var(--pp-line);padding-left:32px}
+#polo-portfolio .pp-impact strong{font-size:35px;letter-spacing:-1.6px;color:var(--pp-blue);display:block;line-height:1.2}
+#polo-portfolio .pp-impact strong span{font-size:23px}
+#polo-portfolio .pp-impact>div>span{font-size:13px;display:block;font-weight:700;margin-top:6px}
+#polo-portfolio .pp-impact small{font-size:11px;color:var(--pp-muted);display:block;margin-top:3px}
+#polo-portfolio .pp-impact-note{font-size:10px;padding:12px 5% 20px;color:var(--pp-muted)}
+#polo-portfolio .pp-brands{padding:17px 5%;display:flex;align-items:center;gap:27px;border-top:1px solid var(--pp-line);border-bottom:1px solid var(--pp-line);flex-wrap:wrap}
+#polo-portfolio .pp-brands>span{font-size:9px;letter-spacing:.8px;color:var(--pp-muted);max-width:75px;line-height:1.5}
+#polo-portfolio .pp-brands strong{font-size:14px;letter-spacing:-.4px}
+#polo-portfolio .pp-work{padding:56px 5%}
+#polo-portfolio .pp-section-heading{display:flex;justify-content:space-between;gap:35px;align-items:flex-end;margin-bottom:28px}
+#polo-portfolio h2{font-size:36px;line-height:1.08;letter-spacing:-1.5px;font-weight:700;margin-top:13px}
+#polo-portfolio .pp-section-heading>p{font-size:13px;line-height:1.6;color:var(--pp-muted);padding-bottom:3px;max-width:230px}
+#polo-portfolio .pp-filters{display:flex;gap:7px;margin:26px 0 25px;flex-wrap:wrap}
+#polo-portfolio .pp-filters button{padding:10px 14px;border:1px solid var(--pp-line);border-radius:24px;background:transparent;font-size:11px}
+#polo-portfolio .pp-filters button[aria-pressed=true]{background:var(--pp-ink);color:var(--pp-white);border-color:var(--pp-ink)}
+#polo-portfolio .pp-filters span{margin-left:13px;font-size:10px;opacity:.7}
+#polo-portfolio .pp-projects{display:grid;grid-template-columns:1fr 1fr;gap:32px 24px}
+#polo-portfolio .pp-cover{height:218px;position:relative;overflow:hidden;background:#e7ebf2}
+#polo-portfolio .pp-cover>img{width:100%;height:100%;object-fit:cover;display:block}
+#polo-portfolio .pp-cover-archive{background:#e7ebf2;display:flex;align-items:center;justify-content:center}
+#polo-portfolio .pp-cover-archive>img{width:auto;max-width:100%;height:100%;object-fit:contain}
+#polo-portfolio .pp-cover-gcash{background:#255ee9}
+#polo-portfolio .pp-cover-koka{background:#f1dedc}
+#polo-portfolio .pp-cover-search{background:var(--pp-blue);color:var(--pp-white);padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between}
+#polo-portfolio .pp-cover .pp-cover-label{font-size:9px;font-weight:700;letter-spacing:1.1px}
+#polo-portfolio .pp-search-stat{font-size:58px;line-height:1;letter-spacing:-3px;font-weight:700}
+#polo-portfolio .pp-search-sub{font-size:11px;line-height:1.7;opacity:.9}
+#polo-portfolio .pp-cover-eos{background:#dce5fa;padding:24px;display:flex;flex-direction:column;justify-content:space-between}
+#polo-portfolio .pp-eos-title{font-size:35px;letter-spacing:-1.5px;line-height:1.05;font-weight:700}
+#polo-portfolio .pp-cover-mrworld{background:#e4e5f5;padding:24px;display:flex;flex-direction:column;justify-content:space-between}
+#polo-portfolio .pp-cover-pill{position:absolute;bottom:14px;left:14px;background:var(--pp-white);padding:6px 10px;font-size:10px;border-radius:16px;color:var(--pp-ink)}
+#polo-portfolio .pp-cover-arrow>img{object-position:50% 41%}
+#polo-portfolio .pp-project-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;margin-top:15px}
+#polo-portfolio .pp-project-heading h3{font-size:21px;letter-spacing:-.7px;line-height:1.2}
+#polo-portfolio .pp-project-heading>span{font-size:9px;letter-spacing:.4px;color:var(--pp-muted);padding-top:4px;text-align:right;flex-shrink:0}
+#polo-portfolio .pp-card-role{font-size:11px;color:var(--pp-blue);margin-top:8px;font-weight:700;line-height:1.5}
+#polo-portfolio .pp-card-summary{font-size:12px;color:var(--pp-muted);line-height:1.7;margin-top:8px;min-height:41px}
+#polo-portfolio .pp-card-bottom{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--pp-line);padding:15px 0 12px;gap:14px}
+#polo-portfolio .pp-card-skills{font-size:10px;color:var(--pp-muted);line-height:1.6}
+#polo-portfolio .pp-card-open{font-size:11px;font-weight:700;border:0;background:none;padding:6px 0;white-space:nowrap}
+#polo-portfolio .pp-card-open span{margin-left:8px;color:var(--pp-blue)}
+#polo-portfolio .pp-card-open:hover,#polo-portfolio .pp-text-button:hover{color:var(--pp-blue)}
+#polo-portfolio .pp-more{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:24px}
+#polo-portfolio .pp-more>span{font-size:10px;color:var(--pp-muted)}
+#polo-portfolio .pp-project-detail{margin-top:28px;padding:26px;background:var(--pp-white);border:1px solid var(--pp-line)}
+#polo-portfolio .pp-detail-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:22px}
+#polo-portfolio .pp-detail-head h3{font-size:27px;line-height:1.1;letter-spacing:-.8px;margin:8px 0}
+#polo-portfolio .pp-close{border:1px solid var(--pp-line);border-radius:22px;background:none;padding:8px 13px;font-size:11px;white-space:nowrap}
+#polo-portfolio .pp-detail-cols{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+#polo-portfolio .pp-detail-copy h4{font-size:10px;text-transform:uppercase;letter-spacing:.8px;margin:17px 0 7px}
+#polo-portfolio .pp-detail-copy h4:first-child{margin-top:0}
+#polo-portfolio .pp-detail-copy p,#polo-portfolio .pp-detail-copy li{font-size:12px;line-height:1.8;color:var(--pp-muted)}
+#polo-portfolio .pp-detail-copy ul{padding-left:18px;margin:0}
+#polo-portfolio .pp-gallery{display:flex;flex-direction:column;align-items:stretch;gap:10px}
+#polo-portfolio .pp-gallery>img{display:block;width:100%;max-height:410px;object-fit:contain;background:var(--pp-paper)}
+#polo-portfolio .pp-gallery>p{font-size:10px;color:var(--pp-muted)}
+#polo-portfolio .pp-gallery-controls{display:flex;align-items:center;justify-content:space-between;gap:15px}
+#polo-portfolio .pp-gallery-controls button{border:1px solid var(--pp-line);border-radius:20px;padding:8px 12px;background:none;font-size:11px}
+#polo-portfolio .pp-gallery-controls span{font-size:11px}
+#polo-portfolio .pp-detail-result{padding:22px;background:#edf0ff;color:var(--pp-ink)}
+#polo-portfolio .pp-detail-result strong{display:block;font-size:31px;letter-spacing:-1px;color:var(--pp-blue);margin-bottom:10px}
+#polo-portfolio .pp-detail-result p{font-size:12px;line-height:1.8}
+#polo-portfolio .pp-skills{padding:48px 5%;background:var(--pp-ink);color:var(--pp-white)}
+#polo-portfolio .pp-skills h2{font-size:33px}
+#polo-portfolio .pp-skills .pp-eyebrow{color:#aebaff}
+#polo-portfolio .pp-skills .pp-section-heading>p{color:#bdc8d5}
+#polo-portfolio .pp-skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:32px}
+#polo-portfolio .pp-skill-grid>div{border-top:1px solid #ffffff35;padding-top:17px}
+#polo-portfolio .pp-skill-number{font-size:10px;color:#aebaff}
+#polo-portfolio .pp-skill-grid h3{font-size:16px;letter-spacing:-.4px;line-height:1.3;margin-top:12px}
+#polo-portfolio .pp-skill-grid p{font-size:11px;line-height:1.9;color:#bdc8d5;margin-top:12px}
+#polo-portfolio .pp-proof{padding:0 0 4px;margin-top:18px;border:0;border-bottom:1px solid #8f9ac4;background:transparent;color:#c5ceff;font-size:10px;text-align:left}
+#polo-portfolio .pp-tools{display:grid;grid-template-columns:160px 1fr;gap:25px;border-top:1px solid #ffffff35;padding-top:22px;margin-top:32px}
+#polo-portfolio .pp-tools>span{font-size:9px;letter-spacing:.8px;color:#aebaff}
+#polo-portfolio .pp-tools p{font-size:11px;line-height:1.9;color:#bdc8d5}
+#polo-portfolio .pp-about{padding:54px 5%;display:grid;grid-template-columns:.8fr 1.2fr;gap:8%;align-items:start}
+#polo-portfolio .pp-about>figure{padding:10px;background:#e7ebf2}
+#polo-portfolio .pp-about img{display:block;width:100%;aspect-ratio:4/4.5;object-fit:cover;object-position:center 35%}
+#polo-portfolio .pp-about figcaption{font-size:10px;color:var(--pp-muted);padding:10px 2px 2px;line-height:1.7}
+#polo-portfolio .pp-about h2{font-size:33px;margin-bottom:23px}
+#polo-portfolio .pp-about h2 em{font-family:Georgia,serif;font-weight:400;color:var(--pp-blue)}
+#polo-portfolio .pp-about>div>p:not(.pp-eyebrow){font-size:13px;line-height:1.8;color:var(--pp-muted);margin-top:14px}
+#polo-portfolio .pp-about .pp-personal{font-size:11px!important;padding-top:17px;border-top:1px solid var(--pp-line)}
+#polo-portfolio .pp-career{margin-top:16px;border-top:1px solid var(--pp-line)}
+#polo-portfolio .pp-career summary{list-style:none;padding:12px 0;font-size:12px;font-weight:700;display:flex;justify-content:space-between;gap:15px}
+#polo-portfolio .pp-career summary::-webkit-details-marker{display:none}
+#polo-portfolio .pp-career p{font-size:11px;line-height:1.8;color:var(--pp-muted);margin:0 0 14px}
+#polo-portfolio .pp-contact{margin:0 5%;padding:35px 0 40px;border-top:1px solid var(--pp-line);display:grid;grid-template-columns:1fr 1fr;gap:10%}
+#polo-portfolio .pp-contact h2{font-size:34px}
+#polo-portfolio .pp-contact p{font-size:12px;line-height:1.8;color:var(--pp-muted);margin-top:18px}
+#polo-portfolio .pp-contact-options>a{font-size:12px;display:flex;gap:12px;justify-content:space-between;border-bottom:1px solid var(--pp-line);padding:10px 0}
+#polo-portfolio .pp-contact-options>span{font-size:11px;display:block;margin-top:11px;color:var(--pp-muted)}
+#polo-portfolio .pp-footer{padding:23px 5%;border-top:1px solid var(--pp-line);display:flex;align-items:center;justify-content:space-between;gap:20px}
+#polo-portfolio .pp-footer>span{font-size:10px;color:var(--pp-muted)}
+@media(max-width:700px){#polo-portfolio .pp-header{padding:19px 5%}#polo-portfolio nav{gap:17px}#polo-portfolio nav>a:nth-child(3){display:none}#polo-portfolio .pp-hero{padding-top:36px;gap:6%;grid-template-columns:1.2fr .8fr}#polo-portfolio h1{font-size:44px;letter-spacing:-2px}#polo-portfolio .pp-portrait-top{font-size:8px}#polo-portfolio .pp-portrait figcaption div>span{font-size:9px}#polo-portfolio .pp-portrait figcaption strong{font-size:14px}#polo-portfolio .pp-hero .pp-eyebrow{font-size:9px}#polo-portfolio .pp-intro{font-size:12px}#polo-portfolio .pp-role{font-size:12px}#polo-portfolio .pp-impact strong{font-size:30px}#polo-portfolio .pp-impact>div+div{padding-left:22px}#polo-portfolio .pp-brands{gap:21px}#polo-portfolio .pp-brands strong{font-size:12px}#polo-portfolio h2{font-size:31px}#polo-portfolio .pp-cover{height:190px}#polo-portfolio .pp-project-heading{display:block}#polo-portfolio .pp-project-heading>span{display:block;text-align:left;margin-top:5px}#polo-portfolio .pp-skill-grid{grid-template-columns:1fr 1fr;gap:24px}#polo-portfolio .pp-about{gap:6%}#polo-portfolio .pp-about h2{font-size:28px}#polo-portfolio .pp-skills h2{font-size:29px}}
+@media(max-width:480px){#polo-portfolio nav{gap:13px;font-size:12px}#polo-portfolio .pp-nav-contact{font-size:11px;padding:8px 11px}#polo-portfolio .pp-nav-contact span{margin-left:5px}#polo-portfolio .pp-wordmark{font-size:31px}#polo-portfolio .pp-preview-label span{display:none}#polo-portfolio .pp-hero{grid-template-columns:1fr;gap:30px;padding:30px 6%}#polo-portfolio h1{font-size:48px;letter-spacing:-2.4px}#polo-portfolio .pp-intro{font-size:14px}#polo-portfolio .pp-role{font-size:13px}#polo-portfolio .pp-hero .pp-eyebrow{font-size:10px}#polo-portfolio .pp-portrait{max-width:300px;width:100%;margin:5px auto 0}#polo-portfolio .pp-portrait>img{aspect-ratio:4/3.5;object-position:77% 24%}#polo-portfolio .pp-portrait-top{font-size:9px}#polo-portfolio .pp-portrait figcaption div>span{font-size:10px}#polo-portfolio .pp-impact{gap:10px;padding:20px 0}#polo-portfolio .pp-impact>div+div{padding-left:12px}#polo-portfolio .pp-impact strong{font-size:24px;letter-spacing:-1px}#polo-portfolio .pp-impact strong span{font-size:18px}#polo-portfolio .pp-impact>div>span{font-size:11px}#polo-portfolio .pp-impact small{font-size:10px}#polo-portfolio .pp-impact-note{font-size:10px}#polo-portfolio .pp-brands{gap:16px}#polo-portfolio .pp-brands>span{max-width:none;width:100%}#polo-portfolio .pp-work{padding-top:37px;padding-bottom:37px}#polo-portfolio .pp-section-heading{display:block}#polo-portfolio .pp-section-heading>p{margin-top:18px;max-width:none}#polo-portfolio .pp-section-heading>p br{display:none}#polo-portfolio h2{font-size:30px}#polo-portfolio .pp-filters{gap:6px}#polo-portfolio .pp-filters button{font-size:10px;padding:9px 11px}#polo-portfolio .pp-filters span{margin-left:7px}#polo-portfolio .pp-projects{grid-template-columns:1fr;gap:26px}#polo-portfolio .pp-cover{height:210px}#polo-portfolio .pp-project-heading{display:flex}#polo-portfolio .pp-project-heading>span{font-size:9px;text-align:right;margin:0}#polo-portfolio .pp-project-heading h3{font-size:21px}#polo-portfolio .pp-card-role{font-size:12px}#polo-portfolio .pp-card-summary{font-size:13px;min-height:0}#polo-portfolio .pp-card-skills,#polo-portfolio .pp-card-open{font-size:11px}#polo-portfolio .pp-more{display:block}#polo-portfolio .pp-more>span{display:block;margin-bottom:10px}#polo-portfolio .pp-skills{padding-top:36px;padding-bottom:36px}#polo-portfolio .pp-skill-grid{gap:24px 18px}#polo-portfolio .pp-skill-grid h3{font-size:16px}#polo-portfolio .pp-skill-grid p{font-size:12px}#polo-portfolio .pp-proof{font-size:11px}#polo-portfolio .pp-tools{grid-template-columns:1fr;gap:10px}#polo-portfolio .pp-tools p{font-size:11px}#polo-portfolio .pp-about{grid-template-columns:1fr;gap:26px;padding-top:36px;padding-bottom:36px}#polo-portfolio .pp-about>figure{max-width:290px}#polo-portfolio .pp-about>figure img{aspect-ratio:4/3.5}#polo-portfolio .pp-about h2{font-size:31px}#polo-portfolio .pp-about>div>p:not(.pp-eyebrow){font-size:14px}#polo-portfolio .pp-contact{grid-template-columns:1fr;gap:22px;padding-top:28px}#polo-portfolio .pp-contact p{font-size:13px}#polo-portfolio .pp-contact-options>a{font-size:13px}#polo-portfolio .pp-footer>span:nth-child(2){max-width:150px;font-size:10px}#polo-portfolio .pp-detail-cols{grid-template-columns:1fr;gap:22px}#polo-portfolio .pp-project-detail{padding:18px}#polo-portfolio .pp-detail-head h3{font-size:23px}#polo-portfolio .pp-detail-copy p,#polo-portfolio .pp-detail-copy li{font-size:13px}}
+@media(prefers-reduced-motion:reduce){#polo-portfolio .pp-portrait{transform:none}}
+/* Professional role, work areas, and tools get the same attention as the headline. */
+#polo-portfolio .pp-identity{border-left:3px solid var(--pp-blue);padding:0 0 0 17px;margin:23px 0 19px}
+#polo-portfolio .pp-role{font-size:24px;line-height:1.2;letter-spacing:-.7px;font-weight:700;color:var(--pp-ink);margin:0 0 9px}
+#polo-portfolio .pp-professional-scope{font-size:18px;line-height:1.4;letter-spacing:-.3px;font-weight:700;color:var(--pp-blue)}
+#polo-portfolio .pp-fractional{font-size:12px;line-height:1.6;color:var(--pp-muted);margin-top:10px}
+#polo-portfolio .pp-intro{font-size:15px;max-width:430px;color:#435266;line-height:1.75}
+#polo-portfolio .pp-impact>div{display:flex;flex-direction:column;justify-content:flex-end}
+#polo-portfolio .pp-impact strong .pp-estimate{font-size:16px;letter-spacing:0;font-weight:400;white-space:nowrap}
+#polo-portfolio .pp-work .pp-section-heading>p{font-size:15px;max-width:250px}
+#polo-portfolio .pp-card-role{font-size:13px;line-height:1.5}
+#polo-portfolio .pp-card-summary{font-size:13px;line-height:1.75;min-height:46px}
+#polo-portfolio .pp-skills-heading{display:block;margin-bottom:36px}
+#polo-portfolio .pp-skills-heading h2{font-size:47px;line-height:1.08;letter-spacing:-1.8px;max-width:820px;margin-top:17px}
+#polo-portfolio .pp-skills-heading h2 span{display:inline-block;font-size:32px;line-height:1.2;letter-spacing:-1px;color:#b5c1ff;margin-top:10px}
+#polo-portfolio .pp-skills-heading>p{font-size:16px;line-height:1.75;max-width:650px;margin-top:23px;color:#d9e1ec}
+#polo-portfolio .pp-skill-grid{grid-template-columns:1fr 1fr;gap:30px 40px}
+#polo-portfolio .pp-skill-number{font-size:11px}
+#polo-portfolio .pp-skill-grid h3{font-size:23px;letter-spacing:-.6px;line-height:1.2;margin-top:11px;max-width:380px}
+#polo-portfolio .pp-skill-grid p{font-size:14px;line-height:1.8;max-width:390px;margin-top:13px;color:#d4deea}
+#polo-portfolio .pp-proof{font-size:12px;line-height:1.7;margin-top:17px;padding-bottom:5px;color:#cad3ff}
+#polo-portfolio .pp-tools-section{background:#e9eeff;padding:48px 5% 42px}
+#polo-portfolio .pp-tools-section .pp-eyebrow{color:#3048bb;font-size:11px}
+#polo-portfolio .pp-tools-section h2{font-size:38px;line-height:1.1;letter-spacing:-1.3px}
+#polo-portfolio .pp-tools-section .pp-section-heading>p{font-size:14px;line-height:1.75;max-width:280px;color:#425470}
+#polo-portfolio .pp-tool-rows{margin-top:30px}
+#polo-portfolio .pp-tool-row{display:grid;grid-template-columns:180px 1fr;gap:24px;border-top:1px solid #c6d0ed;padding:18px 0;align-items:start}
+#polo-portfolio .pp-tool-row h3{font-size:13px;line-height:1.6;font-weight:700;color:#3048bb;padding-top:9px;letter-spacing:0}
+#polo-portfolio .pp-tool-row ul{list-style:none;display:flex;gap:9px;flex-wrap:wrap;padding:0;margin:0}
+#polo-portfolio .pp-tool-row li{font-size:16px;line-height:1.4;font-weight:700;letter-spacing:-.2px;color:var(--pp-ink);background:var(--pp-white);border:1px solid #d3dcf3;border-radius:3px;padding:10px 13px;max-width:100%;overflow-wrap:anywhere}
+#polo-portfolio .pp-about>div>p:not(.pp-eyebrow){font-size:14px;line-height:1.85}
+#polo-portfolio .pp-about>div>p strong{color:var(--pp-ink);font-weight:700}
+@media(max-width:700px){
+  #polo-portfolio nav{gap:17px}
+  #polo-portfolio nav>a:nth-child(3){display:inline}
+  #polo-portfolio nav>.pp-secondary-nav{display:none}
+  #polo-portfolio .pp-role{font-size:21px}
+  #polo-portfolio .pp-professional-scope{font-size:16px}
+  #polo-portfolio .pp-hero{align-items:start}
+  #polo-portfolio .pp-portrait{margin-top:36px}
+  #polo-portfolio .pp-intro{font-size:14px}
+  #polo-portfolio .pp-impact strong{font-size:29px}
+  #polo-portfolio .pp-impact strong .pp-estimate{font-size:13px}
+  #polo-portfolio .pp-skills-heading h2{font-size:39px;letter-spacing:-1.3px}
+  #polo-portfolio .pp-skills-heading h2 span{font-size:28px;letter-spacing:-.7px}
+  #polo-portfolio .pp-skills-heading>p{font-size:15px}
+  #polo-portfolio .pp-skill-grid{gap:27px 24px}
+  #polo-portfolio .pp-skill-grid h3{font-size:21px}
+  #polo-portfolio .pp-skill-grid p{font-size:13px}
+  #polo-portfolio .pp-tools-section .pp-section-heading{display:block}
+  #polo-portfolio .pp-tools-section .pp-section-heading>p{max-width:490px;margin-top:17px}
+  #polo-portfolio .pp-tools-section h2{font-size:34px}
+  #polo-portfolio .pp-tool-row{grid-template-columns:145px 1fr;gap:18px}
+  #polo-portfolio .pp-tool-row li{font-size:14px}
+}
+@media(max-width:480px){
+  #polo-portfolio nav{gap:11px;font-size:12px;flex-wrap:wrap;justify-content:flex-end}
+  #polo-portfolio .pp-header{gap:14px}
+  #polo-portfolio .pp-role{font-size:24px}
+  #polo-portfolio .pp-professional-scope{font-size:18px}
+  #polo-portfolio .pp-fractional{font-size:12px}
+  #polo-portfolio .pp-identity{padding-left:14px;margin-bottom:20px}
+  #polo-portfolio .pp-intro{font-size:15px}
+  #polo-portfolio .pp-portrait{margin-top:5px}
+  #polo-portfolio .pp-impact strong{font-size:24px}
+  #polo-portfolio .pp-impact strong .pp-estimate{font-size:11px;display:block;line-height:1.3;margin-bottom:3px}
+  #polo-portfolio .pp-work .pp-section-heading>p{font-size:14px}
+  #polo-portfolio .pp-skills-heading h2{font-size:35px;letter-spacing:-1.3px}
+  #polo-portfolio .pp-skills-heading h2 span{font-size:25px;line-height:1.25;margin-top:13px;letter-spacing:-.6px}
+  #polo-portfolio .pp-skills-heading>p{font-size:15px}
+  #polo-portfolio .pp-skill-grid{grid-template-columns:1fr;gap:26px}
+  #polo-portfolio .pp-skill-grid h3{font-size:23px}
+  #polo-portfolio .pp-skill-grid p{font-size:14px}
+  #polo-portfolio .pp-proof{font-size:12px}
+  #polo-portfolio .pp-tools-section{padding:36px 5% 30px}
+  #polo-portfolio .pp-tools-section h2{font-size:32px}
+  #polo-portfolio .pp-tool-rows{margin-top:24px}
+  #polo-portfolio .pp-tool-row{grid-template-columns:1fr;gap:11px;padding:17px 0}
+  #polo-portfolio .pp-tool-row h3{font-size:13px;padding-top:0}
+  #polo-portfolio .pp-tool-row li{font-size:15px;padding:10px 12px}
+}
+/* A deeper text blue and an ocean-blue Nautilus surface. */
+#polo-portfolio{--pp-blue:#153e83;--pp-nautilus:#1f3a5f;--pp-ice:#c3dced}
+#polo-portfolio .pp-preview-label{background:#e7eef6;color:#23476e}
+#polo-portfolio .pp-skills{background:var(--pp-nautilus)}
+#polo-portfolio .pp-cover-search{background:var(--pp-nautilus)}
+#polo-portfolio .pp-skills .pp-eyebrow,#polo-portfolio .pp-skill-number{color:#bfd7ea}
+#polo-portfolio .pp-skills-heading h2 span{color:var(--pp-ice)}
+#polo-portfolio .pp-skills .pp-section-heading>p{color:#e0eaf3}
+#polo-portfolio .pp-skill-grid p{color:#d9e5ef}
+#polo-portfolio .pp-proof{color:#d0e3f1;border-color:#9bb6cf}
+#polo-portfolio .pp-tools-section{background:#e8eff6}
+#polo-portfolio .pp-tools-section .pp-eyebrow,#polo-portfolio .pp-tool-row h3{color:#244b75}
+#polo-portfolio .pp-tools-section .pp-section-heading>p{color:#42556b}
+#polo-portfolio .pp-tool-row{border-color:#c7d4e2}
+#polo-portfolio .pp-tool-row li{border-color:#d2dfea}
+#polo-portfolio .pp-cover-eos{background:#dce8f0}
+#polo-portfolio .pp-cover-mrworld{background:#e3eaf3}
+#polo-portfolio .pp-detail-result{background:#e9eff7}
+/* Explicit colours keep the page readable inside light and dark display themes. */
+#polo-portfolio .pp-site h1,#polo-portfolio .pp-site h2,#polo-portfolio .pp-site h3,#polo-portfolio .pp-site h4{color:var(--pp-ink);font-family:Arial,Helvetica,sans-serif;font-weight:700;opacity:1}
+#polo-portfolio .pp-site h1 span{color:var(--pp-blue)}
+#polo-portfolio .pp-site p{color:#33465d;opacity:1}
+#polo-portfolio .pp-site .pp-eyebrow{font-size:14px;line-height:1.5;letter-spacing:.7px;font-weight:700;color:#244563;opacity:1}
+#polo-portfolio .pp-hero .pp-eyebrow{font-size:13px;color:#244563}
+#polo-portfolio .pp-site .pp-role{color:var(--pp-ink)}
+#polo-portfolio .pp-site .pp-professional-scope{color:var(--pp-blue);font-size:20px}
+#polo-portfolio .pp-site .pp-fractional{color:#41556e;font-size:14px}
+#polo-portfolio .pp-site .pp-intro{font-size:16px;line-height:1.75;color:#33465d}
+#polo-portfolio .pp-site .pp-impact-note{font-size:13px;line-height:1.65;color:#40536a}
+#polo-portfolio .pp-site .pp-impact small{font-size:13px;line-height:1.5;color:#40536a}
+#polo-portfolio .pp-site .pp-impact>div>span{font-size:15px;line-height:1.5;color:var(--pp-ink)}
+#polo-portfolio .pp-site .pp-impact strong .pp-estimate{font-size:14px}
+#polo-portfolio .pp-site .pp-section-heading>p{font-size:16px;line-height:1.75;color:#33465d;max-width:300px}
+#polo-portfolio .pp-site .pp-project-heading h3{font-size:23px;line-height:1.25}
+#polo-portfolio .pp-site .pp-project-heading>span{font-size:12px;line-height:1.5;color:#41556e}
+#polo-portfolio .pp-site .pp-card-role{font-size:15px;line-height:1.5;color:var(--pp-blue)}
+#polo-portfolio .pp-site .pp-card-summary{font-size:15px;line-height:1.75;color:#33465d;min-height:53px}
+#polo-portfolio .pp-site .pp-card-skills{font-size:13px;line-height:1.6;color:#40536a}
+#polo-portfolio .pp-site .pp-card-open{font-size:14px;line-height:1.5}
+#polo-portfolio .pp-site .pp-filters button{font-size:14px;line-height:1.5;padding:11px 15px}
+#polo-portfolio .pp-site .pp-filters span{font-size:12px}
+#polo-portfolio .pp-site .pp-more>span{font-size:13px;line-height:1.6;color:#40536a}
+#polo-portfolio .pp-site .pp-text-button{font-size:14px;line-height:1.5}
+#polo-portfolio .pp-site .pp-primary{font-size:14px;line-height:1.5}
+#polo-portfolio .pp-site .pp-skills h2,#polo-portfolio .pp-site .pp-skills h3{color:#fff}
+#polo-portfolio .pp-site .pp-skills .pp-eyebrow{color:#d3e6f4}
+#polo-portfolio .pp-site .pp-skills h2 span{color:#d3e6f4}
+#polo-portfolio .pp-site .pp-skills .pp-section-heading>p{color:#e6eef5;font-size:17px;line-height:1.75;max-width:700px}
+#polo-portfolio .pp-site .pp-skills .pp-skill-number{color:#d3e6f4;font-size:13px}
+#polo-portfolio .pp-site .pp-skill-grid p{font-size:16px;line-height:1.8;color:#e6eef5}
+#polo-portfolio .pp-site .pp-proof{font-size:14px;line-height:1.6;color:#d4e8f7}
+#polo-portfolio .pp-site .pp-cover-search p{color:#fff;font-size:14px;line-height:1.6}
+#polo-portfolio .pp-site .pp-cover-label{font-size:12px;line-height:1.5}
+#polo-portfolio .pp-site .pp-cover-pill{font-size:13px;line-height:1.5;max-width:calc(100% - 28px)}
+#polo-portfolio .pp-site .pp-search-sub{font-size:14px;line-height:1.6}
+#polo-portfolio .pp-site .pp-tools-section{padding-top:54px;padding-bottom:42px}
+#polo-portfolio .pp-site .pp-tools-section h2{font-size:46px;line-height:1.12;letter-spacing:-1.5px;color:#132335}
+#polo-portfolio .pp-site .pp-tools-section .pp-eyebrow{color:#244563;font-size:14px}
+#polo-portfolio .pp-site .pp-tool-row{grid-template-columns:185px 1fr;gap:30px;padding:24px 0}
+#polo-portfolio .pp-site .pp-tool-row h3{font-size:15px;line-height:1.55;letter-spacing:0;color:#183b61;padding-top:10px}
+#polo-portfolio .pp-site .pp-tool-row ul{gap:20px 26px;align-items:center}
+#polo-portfolio .pp-site .pp-tool-row li{display:flex;align-items:center;gap:12px;max-width:100%;background:none;border:0;border-radius:0;padding:5px 0;font-size:17px;line-height:1.45;font-weight:600;letter-spacing:0;color:#132335}
+#polo-portfolio .pp-site .pp-tool-row li>span{min-width:0;overflow-wrap:anywhere}
+#polo-portfolio .pp-tool-logo{width:40px;height:40px;object-fit:contain;display:block;flex:0 0 40px}
+#polo-portfolio .pp-site .pp-about h2{font-size:40px;line-height:1.15;font-family:Arial,Helvetica,sans-serif;font-weight:700;letter-spacing:-1.1px;color:#132335}
+#polo-portfolio .pp-site .pp-about h2 em{font-family:Arial,Helvetica,sans-serif;font-weight:700;font-style:normal;letter-spacing:-1.1px;color:var(--pp-blue)}
+#polo-portfolio .pp-site .pp-about .pp-eyebrow{font-size:14px;line-height:1.5;color:#244563;margin-bottom:17px}
+#polo-portfolio .pp-site .pp-about>div>p:not(.pp-eyebrow){font-size:16px;line-height:1.8;color:#33465d}
+#polo-portfolio .pp-site .pp-about .pp-personal{font-size:15px!important;line-height:1.75}
+#polo-portfolio .pp-site .pp-about figcaption{font-size:13px;line-height:1.6;color:#33465d}
+#polo-portfolio .pp-site .pp-career summary{font-size:16px;line-height:1.5;color:#132335;padding:15px 0}
+#polo-portfolio .pp-site .pp-career p{font-size:15px;line-height:1.75;color:#33465d}
+#polo-portfolio .pp-site .pp-contact h2{font-size:40px;line-height:1.15;color:#132335}
+#polo-portfolio .pp-site .pp-contact p{font-size:16px;line-height:1.75;color:#33465d}
+#polo-portfolio .pp-site .pp-contact-options>a{font-size:15px;line-height:1.6;color:#132335;overflow-wrap:anywhere}
+#polo-portfolio .pp-site .pp-contact-options>span{font-size:14px;line-height:1.6;color:#33465d}
+#polo-portfolio .pp-site .pp-detail-head h3{font-size:30px;line-height:1.2;color:#132335}
+#polo-portfolio .pp-site .pp-detail-copy h4{font-size:14px;line-height:1.5;color:#244563}
+#polo-portfolio .pp-site .pp-detail-copy p,#polo-portfolio .pp-site .pp-detail-copy li{font-size:16px;line-height:1.75;color:#33465d}
+#polo-portfolio .pp-site .pp-gallery>p{font-size:14px;line-height:1.6;color:#33465d}
+#polo-portfolio .pp-site .pp-detail-result p{font-size:16px;line-height:1.75;color:#33465d}
+#polo-portfolio .pp-site .pp-gallery-controls button,#polo-portfolio .pp-site .pp-gallery-controls span,#polo-portfolio .pp-site .pp-close{font-size:14px;line-height:1.5}
+#polo-portfolio .pp-site .pp-footer>span{font-size:13px;line-height:1.6;color:#33465d}
+@media(max-width:700px){
+  #polo-portfolio .pp-site .pp-tools-section h2{font-size:40px}
+  #polo-portfolio .pp-site .pp-tool-row{grid-template-columns:1fr;gap:17px}
+  #polo-portfolio .pp-site .pp-tool-row h3{padding-top:0;font-size:16px}
+  #polo-portfolio .pp-site .pp-tool-row ul{gap:18px 25px}
+  #polo-portfolio .pp-site .pp-project-heading{display:block}
+  #polo-portfolio .pp-site .pp-project-heading>span{display:block;text-align:left;margin-top:6px}
+  #polo-portfolio .pp-site .pp-card-bottom{flex-wrap:wrap;gap:8px}
+  #polo-portfolio .pp-site .pp-about{grid-template-columns:1fr;gap:30px}
+  #polo-portfolio .pp-site .pp-about>figure{max-width:350px}
+  #polo-portfolio .pp-site .pp-about h2{font-size:39px}
+  #polo-portfolio .pp-site .pp-impact strong{font-size:29px}
+}
+@media(max-width:480px){
+  #polo-portfolio .pp-site .pp-tools-section h2{font-size:35px;letter-spacing:-.9px}
+  #polo-portfolio .pp-site .pp-about h2{font-size:35px;letter-spacing:-.9px}
+  #polo-portfolio .pp-site .pp-about h2 em{letter-spacing:-.9px}
+  #polo-portfolio .pp-site .pp-tool-row ul{display:grid;grid-template-columns:1fr;gap:17px}
+  #polo-portfolio .pp-site .pp-tool-row li{font-size:17px}
+  #polo-portfolio .pp-site .pp-impact{grid-template-columns:1fr;gap:20px;padding:24px 0}
+  #polo-portfolio .pp-site .pp-impact>div{padding:0;border-left:0}
+  #polo-portfolio .pp-site .pp-impact strong{font-size:36px}
+  #polo-portfolio .pp-site .pp-impact strong .pp-estimate{display:inline;font-size:16px}
+  #polo-portfolio .pp-site .pp-more{display:block}
+  #polo-portfolio .pp-site .pp-more>span{margin-bottom:10px;display:block}
+  #polo-portfolio .pp-site .pp-hero .pp-eyebrow{font-size:13px}
+  #polo-portfolio .pp-site .pp-contact h2{font-size:35px}
+}
+#polo-portfolio .pp-site .pp-brands>span{font-size:12px;line-height:1.5;color:#33465d;max-width:100px}
+#polo-portfolio .pp-site .pp-brands strong{font-size:16px;color:#132335}
+#polo-portfolio .pp-site .pp-portrait-top{font-size:12px;line-height:1.5;letter-spacing:.4px;color:#244563;align-items:flex-start}
+#polo-portfolio .pp-site .pp-portrait figcaption strong{font-size:18px;color:#132335}
+#polo-portfolio .pp-site .pp-portrait figcaption div>span{font-size:13px;line-height:1.6;color:#33465d}
 
-/* Project photos and image selection. */
-#project-content{display:block;min-height:300px}
-.gallery-thumbnails{display:flex;gap:9px;overflow-x:auto;padding:10px 3px 4px}
-.gallery-thumbnails button{flex:0 0 66px;width:66px;height:50px;padding:2px;border:2px solid transparent;border-radius:4px;background:transparent}
-.gallery-thumbnails button[aria-pressed="true"]{border-color:var(--blue)}
-.gallery-thumbnails img{display:block;width:100%;height:100%;object-fit:cover;border-radius:1px}
-.cover-wellness img{object-position:50% 43%}
-.cover-restart img{object-position:50% 50%}
-@media(max-width:700px){.gallery-thumbnails button{flex-basis:60px;width:60px;height:46px}#project-content{min-height:240px}}
+#polo-portfolio .pp-site .pp-story-text p{font-size:16px;line-height:1.85;margin:0 0 20px}#polo-portfolio .pp-site .pp-detail-copy a{display:inline-block;margin-top:12px;color:var(--pp-blue)}
