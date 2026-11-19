@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>
+// Keep the portfolio address clean when opened from external links.
+if (window.location.search) {
+  window.history.replaceState(window.history.state, "", window.location.pathname + window.location.hash);
+}
+</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Polo Enriquez | Content &amp; Marketing</title>
 <meta name="description" content="Explore Polo Enriquez’s content, social media, digital marketing, and marketing programs. Selected projects, results, skills, and fractional marketing support.">
